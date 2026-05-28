@@ -35,6 +35,48 @@
       font-size: 20px;
     }
     /* Header Section End */
+    /* Hero Section Start */
+    main{
+      height: calc(100vh - 70px);
+      /* background-color: brown; */
+      display: flex;
+      justify-content: space-between;
+      padding-left: 70px;
+    }
+
+    .hero-content{
+      margin-top: 130px;
+    }
+
+    .hero-content h1{
+      font-size: 45px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 span {
+      color: cadetblue;
+    }
+
+    .hero-content p{
+      font-size: 22px;
+      margin-bottom: 3rem;
+    }
+    .hero-buttons button{
+      background-color: cadetblue;
+      color: aliceblue;
+      border: 0;
+      padding: 15px 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    .hero-img img{
+      height: 100%;
+    }
+
+    /* Hero Section End */
+
   </style>
 </head>
 <body>
@@ -58,5 +100,25 @@
     </nav>
 
   </header>
+  <!-- Hero Section -->
+  <main>
+    <div class="hero-content">
+
+      <h1>Hi, I am <span>Hridoy Islam</span></h1>
+
+      <p>Beginner MERN Stack Developer</p>
+
+      <div class="hero-buttons">
+
+        <button>Download CV</button>
+
+        <button>Contact Me</button>
+        
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="./images/hero-pic.jpg" alt="Hero Picture">
+    </div>
+  </main>
 </body>
 </html>
