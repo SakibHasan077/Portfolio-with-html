@@ -10,6 +10,10 @@
       padding: 0;
       box-sizing: border-box;
     }
+    h2{
+      font-size: 33px;
+      text-align: center;
+    }
     /* Header Section Start */
     header{
       width: 100%;
@@ -81,19 +85,53 @@
       height: 50vh;
       display: flex;
       align-items: center;
+      justify-content: center;
       padding-left: 70px;
+      margin-top: 70px;
     }
 
     .about h2{
-      font-size: 33px;
       margin-bottom: .7rem;
     }
-    
+
     .about p{
       font-size: 20px;
       margin-bottom: .7rem;
+      text-align: center;
     }
     /* About Section End */
+    .skills{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 70px;
+      padding-inline: 50px;
+    }
+
+
+    .skills-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 2.5rem;
+      margin-top: 50px;
+    }
+
+    .progress-bar{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .progress-bar label{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .progress-bar progress{
+      font-size: 30px;
+      font-weight: bold;
+      appearance: none;
+      height: 15px;
+    }
 
   </style>
 </head>
@@ -149,6 +187,61 @@
 
       <p>My goal is to become a skilled Full Stack Web Developer in the future.</p>
     </div>
-</section>
+  </section>
+  <!-- Skill section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <!-- html -->
+    <div class="skills-container">
+
+      <div class="progress-bar">
+
+        <label for="html">HTML</label>
+
+        <progress id="html" value="98" max="100">98%</progress>
+
+      </div>
+      <!-- Css -->
+      <div class="progress-bar">
+
+        <label for="CSS">CSS</label>
+
+        <progress id="CSS" value="95" max="100">95%</progress>
+
+      </div>
+      <!-- JavaScript -->
+      <div class="progress-bar">
+
+        <label for="JavaScript">JavaScript</label>
+
+        <progress id="JavaScript" value="85" max="100">85%</progress>
+
+      </div>
+      <!-- React -->
+      <div class="progress-bar">
+
+        <label for="React">React</label>
+
+        <progress id="React" value="80" max="100">80%</progress>
+
+      </div>
+      <!-- Node.js -->
+      <div class="progress-bar">
+
+        <label for="Node.js">Node.js</label>
+
+        <progress id="Node.js" value="80" max="100">80%</progress>
+
+      </div>
+      <!--MongoDB -->
+      <div class="progress-bar">
+
+        <label for="MongoDB">MongoDB</label>
+
+        <progress id="MongoDB" value="75" max="100">75%</progress>
+
+      </div>
+    </div>
+  </section>
 </body>
 </html>
